@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Maatwebsite\Excel\Facades\Excel;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,6 @@ Route::middleware('auth')->group(function (){
 
 Route::get('/profiles/{user:username}','ProfileController@show')->name('profile');
 
-
+Route::get('/download-dataset',function (){
+    return Excel::download(new \App\Exports\PlantsExport, 'utilities.xlsx');
+});
