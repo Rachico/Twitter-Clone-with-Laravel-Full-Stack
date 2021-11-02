@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Twitter Clone</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -25,7 +25,7 @@
         <div id="app">
             <section class="px-8 py-4">
                 <header class="container mx-auto">
-                    <img src="/img/Tweety_logo.svg" alt="tweety" class="w-100 pl-0" style ="max-width:250px; margin-left: -45px; margin-bottom: -20px">
+                    <img src="/img/Twitter-logo.png" alt="tweety" class="w-100 pl-0" style ="max-width:250px; margin-left: -45px; margin-bottom: -20px">
                 </header>
             </section>
 
